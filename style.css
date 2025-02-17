@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", serif;
+}
+
+.header {
+  background-color: #1F2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  flex-basis: 1200px;
+  justify-content: space-between;
+  padding: 32px 16px;
+}
+
+.navbar div {
+  font-size: 24px;
+  font-weight: 900;
+  color: #F9FAF8
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: auto;
+  gap: 16px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #E5E7EB;
+}
