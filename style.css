@@ -97,8 +97,55 @@ button {
   background-color: #888888;
 }
 
+main {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+}
+
+.info-grid {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-grid .heading {
+  padding: 30px;
+  font-weight: 900;
+  font-size: 36px;
+  color: #1F2937  
+}
+
+.info-grid ul {
+  gap: 50px;
+}
+
+.info-grid li {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.square {
+  height: 150px;
+  border: 3px solid #3882f6;
+  border-radius: 10%;
+}
+
+.subtext {
+  padding-top: 8px;
+  text-align: center;
+  color: #666666;
+}
+
+.square,
+.subtext {
+  width: 150px;
+}
+
 footer {
-  margin-top: auto;
   height: 100px;
   color: #E5E7EB;
 }
