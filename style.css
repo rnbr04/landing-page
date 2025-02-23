@@ -26,13 +26,15 @@ nav,
 }
 
 nav div,
-.text .heading {
+.text .heading, 
+.modal-heading {
   font-weight: 900;
   color: #F9FAF8;
 }
 
 nav a, 
-.hero .secondary-text {
+.hero .secondary-text,
+.modal-secondary-text {
   font-size: 18px;
   color: #E5E7EB;
 }
@@ -80,11 +82,15 @@ a {
   padding-right: 64px;
 }
 
-button {
+.hero-button {
   margin-top: 16px;
+  border: none;
+}
+
+.hero-button,
+.modal-button {
   padding: 8px 32px;
   border-radius: 8px;
-  border: none;
   font-weight: bold;
   color: inherit;
   background-color: #3882f6;
@@ -105,7 +111,8 @@ main {
 }
 
 .info-grid,
-.quote {
+.quote,
+.action-container {
   flex: 1;
   display: flex;
   flex-flow: column;
@@ -176,7 +183,43 @@ main {
   font-weight: bold;
 }
 
+.action-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  border-radius: 8px;
+  background-color: #3882f6;
+  color:#F9FAF8;
+  padding: 30px 100px;
+  display: flex;
+  gap: 200px;
+}
+
+.modal-text {
+  display: flex;
+  flex-flow: column;
+}
+
+.modal-heading {
+  
+  font-size: 18px;
+}
+
+.modal-secondary-text {
+  color:#E5E7EB;
+  font-size: small;
+}
+
+.modal-button {
+  align-self: center;
+  border-style: solid;
+  border-color: inherit;
+}
+
 footer {
-  height: 100px;
+  height: 80px;
   color: #E5E7EB;
 }
