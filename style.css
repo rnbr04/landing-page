@@ -104,12 +104,21 @@ main {
   flex-flow: column;
 }
 
-.info-grid {
+.info-grid,
+.quote {
+  flex: 1;
   display: flex;
   flex-flow: column;
   align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  padding: 100px 0;
+}
+
+.info-grid ul, 
+.quote {
+  max-width: 800px;
 }
 
 .info-grid .heading {
@@ -144,6 +153,27 @@ main {
 .square,
 .subtext {
   width: 150px;
+}
+
+.quote-container {
+  flex: 1;
+  display: flex;
+  background-color: #E5E7EB;
+}
+
+.quote .text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 200;
+  color: #1F2937;
+}
+
+.quote .author {
+  padding-right: 32px;
+  align-self: end;
+  max-width: 750px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 footer {
